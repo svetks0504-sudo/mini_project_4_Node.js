@@ -19,7 +19,7 @@ export const registerUser = async (req, res) => {
       email,
       password,
     });
-    es.status(201).json({
+    res.status(201).json({
       success: true,
       message: "User registered",
       user: {
